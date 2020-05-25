@@ -1,0 +1,98 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- accept
+- ask_for_information
+- bot_challenge
+- greetings
+- inform
+- greetings_with_name
+- thanks
+- goodbye
+- affirm
+- deny
+- mood_unhappy
+- ask_for_diagnosis
+- ask Information
+- prescription
+- mood_great
+- book appointment
+- out_of_scope
+- say_symptoms
+entities:
+- disease
+- name
+- place
+- symptom
+slots:
+  disease:
+    type: text
+  name:
+    type: text
+    initial_value: User
+  symptom:
+    type: text
+    auto_fill: False
+
+responses:
+  utter_ask_age:
+  - text: How old are you?
+  utter_ask_name:
+  - text: please tell me your name?
+  utter_ask_first_symptom:
+  - text: Please tell me about your symptoms
+  utter_ask_symptoms:
+  - text: Any other symptoms?
+  utter_book_appointment:
+  - text: Do you want to make an appointment with our doctor?
+  utter_corefallback:
+  - text: Disease prediction for your symptoms is not in scope of this bot.
+  utter_default:
+  - text: without testing I am unable to find a conclusion to your condition.
+  - text: looks like your symptoms are out of scope this chat bot. shall I book your
+      appointment to our doctor.
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: Bye bye
+  - text: Have a nice day
+  - text: Take care of your health.Bye!
+  utter_greet:
+  - text: hello {name}!
+  - text: Hello !
+  utter_happy:
+  - text: Great, carry on!
+  utter_howcanhelp:
+  - text: Hey what made you visit me
+  utter_iamabot:
+  - text: Yes,I am a bot.
+  utter_nlufallback:
+  - text: Sorry, I am not sure I have understand that. can you rephrase that
+  utter_submit:
+  - text: output
+  utter_thanks:
+  - text: MY pleasure
+  utter_introduction:
+  - text: Hello {name}, Tell me your symptoms and I can help you. What do you want?
+
+forms:
+  - ask_symptoms
+actions:
+- action_diagnose
+- utter_ask_age
+- utter_ask_name
+- utter_ask_symptoms
+- utter_book_appointment
+- utter_corefallback
+- utter_default
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_howcanhelp
+- utter_iamabot
+- utter_nlufallback
+- utter_submit
+- utter_thanks
+- utter_ask_first_symptom
