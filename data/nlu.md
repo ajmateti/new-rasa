@@ -59,12 +59,30 @@
 - am I talking to a human?
 
 ## intent:inform
+- My name is [spoorthi](name)
+- I am [dev](name)
+- I am [jo](name)
+- [aneesh](name)
+- [spoo](name)
+- [manisha yendapally](name)
+- [pavan sai kiran](name)
+- [ravi](name)
+- [kalpana](name)
+- [krithika bitla](name)
+- [snehish dasari](name)
+- [siva teja gonella](name)
+- I am [aneesh](name)
+- My name is [aneesh](name)
+- Myself [krithika bitla](name)
+- Hi, I am [ravi](name). Nice to meet you. 
+- hello, I am [siva teja gonella](name). How are you?
 - I am [harish](name) from hyderabad
 - [hari](name)
 - [rajesh](name)
 - I am [suresh](name)
 - i am [gayathri](name)
-- My name is [ajay](name)
+- My name is [aneesh](name)
+- I am [anees](name)
 
 ## intent:greetings_with_name
 - hello,I am [pawan](name)
@@ -92,6 +110,7 @@
 - I am having severe [headache](symptom)
 - I am having [stomach pain and headache](symptom)
 - [severe fever](symptom)
+- [fever, headache and vomiting](symptom)
 - I have [fever, headache and vomiting](symptom)
 - I am feeling [fever, tiredness and dry cough](symptom)
 - I have [irritation of eyes](symptom)
@@ -109,5 +128,6 @@
 - Yeah. I have gone through [vomitings](symptom) since morning.
 - suffering from [nasal discharge and dry cough](symptom)
 - Yes. i also have mild [sore throat](symptom)
+- [irritation of eyes, redness of eyes , redness of eyes and light sensitivity](symptom)
  
 
