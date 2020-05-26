@@ -87,9 +87,9 @@
 ## intent:greetings_with_name
 - hello,I am [pawan](name)
 - hi,my name is [naresh](name)
-- hello [chatbot](name), i am [chandu](name) 
+- hello chatbot, i am [chandu](name) 
 - hello,i am [harish](name)
-- iam [harish][](name)
+- iam [harish](name)
 - hi ,i am [chandu](name)
 
 

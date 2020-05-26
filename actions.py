@@ -61,15 +61,17 @@ class ActionHelloWorld(Action):
 class ActionAskSymptom(Action):
     def name(self) -> Text:
         return "action_ask_symptom"
-    first = True
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        if self.first:
+        first_symptom = tracker.get_slot("first_symptom")
+        if first_symptom:
             dispatcher.utter_message(template="utter_ask_first_symptom")
-            self.first= False
+            return ([SlotSet("first_symptom",False)])
         else:
             dispatcher.utter_message(template="utter_ask_symptoms")
+
+        return ([])
 
 class ActionSaveSymptom(Action):
     def name(self) -> Text:

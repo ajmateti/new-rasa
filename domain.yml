@@ -27,6 +27,7 @@ entities:
 - place
 - symptom
 - symptoms_list
+- first_symptom
 slots:
   disease:
     type: text
@@ -38,6 +39,9 @@ slots:
     initial_value: NO_SYMPTOM
   symptoms_list:
     type: list
+  first_symptom:
+    type: bool
+    initial_value: True
 
 responses:
   utter_ask_age:
