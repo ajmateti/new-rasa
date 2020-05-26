@@ -33,7 +33,6 @@ slots:
     type: text
   name:
     type: text
-    initial_value: User
   symptom:
     type: text
     initial_value: NO_SYMPTOM
@@ -63,8 +62,6 @@ responses:
   utter_did_that_help:
   - text: Did that help you?
   utter_goodbye:
-  - text: Bye bye
-  - text: Have a nice day
   - text: Take care of your health.Bye!
   utter_greet:
   - text: hello {name}!

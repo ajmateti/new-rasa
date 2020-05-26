@@ -12,6 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+import predict
 
 class ActionHelloWorld(Action):
 
@@ -112,4 +113,5 @@ class ActionPredictDisease(Action):
 
     def predict_disease(self,symptoms):
         print(symptoms)
-        return "Covid19"
+        return predict.predict_disease(symptoms)
+
