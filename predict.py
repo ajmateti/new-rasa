@@ -69,7 +69,7 @@ def load_model():
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy'])
-    path = os.getcwd()+'/estimators/weights.h5'
+    path = os.getcwd()+'/estimators/Model2/weights.h5'
     model.load_weights(path)
     return model
 
@@ -77,7 +77,7 @@ def load_df():
     global df
     if df is not None:
         return df
-    with open(os.getcwd()+'/estimators/saved-objects/dataframe.pkl','rb') as f :
+    with open(os.getcwd()+'/estimators/Model2/dataframe.pkl','rb') as f :
         df = pickle.load(f)
     return df
 
@@ -85,7 +85,7 @@ def load_disease2id():
     global disease2id
     if disease2id is not None:
         return disease2id
-    with open(os.getcwd()+'/estimators/saved-objects/disease2id.pkl','rb') as f :
+    with open(os.getcwd()+'/estimators/Model2/disease2id.pkl','rb') as f :
         disease2id = pickle.load(f)
     return disease2id
 
@@ -93,7 +93,7 @@ def load_id2disease():
     global id2disease
     if id2disease is not None:
         return id2disease
-    with open(os.getcwd()+'/estimators/saved-objects/id2disease.pkl','rb') as f :
+    with open(os.getcwd()+'/estimators/Model2/id2disease.pkl','rb') as f :
         id2disease = pickle.load(f)
     return id2disease
 
