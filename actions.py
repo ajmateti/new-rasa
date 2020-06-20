@@ -68,7 +68,7 @@ class ActionPredictDisease(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         symptoms = tracker.get_slot("symptoms_list")
         disease, overview = self.predict_disease(symptoms)
-
+        overview = "Overview:\n" + overview
         text = "You may have {}".format(disease) + "\n" + overview
         dispatcher.utter_message(text = text)
         return ([SlotSet("disease",disease), SlotSet("symptoms_list",[])])
@@ -88,6 +88,7 @@ class ActionGetInfoTreatment(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         disease = tracker.get_slot("disease")
         treatment = self.get_treatment(disease)
+        treatment = "Treatment:\n" + treatment
         dispatcher.utter_message(text = treatment)
         return ([SlotSet("disease",disease)])
 
