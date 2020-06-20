@@ -87,27 +87,8 @@ responses:
 forms:
   - ask_symptoms
 actions:
-- action_diagnose
-- action_info_treatment
-- ask_for_info_treatment
-- ask_for_information
 - action_get_info_treatment
 - action_ask_symptom
 - action_save_symptom
 - action_predict_disease
-- utter_ask_age
-- utter_ask_name
-- utter_ask_symptoms
-- utter_book_appointment
-- utter_corefallback
-- utter_default
-- utter_did_that_help
-- utter_goodbye
-- utter_greet
-- utter_happy
-- utter_howcanhelp
-- utter_iamabot
-- utter_nlufallback
-- utter_submit
-- utter_thanks
-- utter_ask_first_symptom
+
