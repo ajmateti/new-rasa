@@ -14,6 +14,9 @@
 - goodbye
 - see you around
 - see you later
+- thank you
+- very well
+- okay bye
 
 ## intent:affirm
 - yes
@@ -82,9 +85,7 @@
 - I am [suresh](name)
 - i am [gayathri](name)
 - My name is [aneesh](name)
-- I am [anees](name)
-
-## intent:greetings_with_name
+- I am [aneesh](name)
 - hello,I am [pawan](name)
 - hi,my name is [naresh](name)
 - hello chatbot, i am [chandu](name) 
@@ -92,11 +93,14 @@
 - iam [harish](name)
 - hi ,i am [chandu](name)
 
-
-##intent:ask_for_information
-- i want to know about [coronavirus](disease)
-- what are the treatments for [malaria](disease)?
-- what are the symptoms for [cholera](disease)?
+##intent:ask_for_info_treatment
+- what is the treatment for it?
+- what to do now?
+- what can i do now?
+- what are the treatments?
+- should i visit a doctor?
+- is it curable?
+- what to do if i get [cholera](disease)?
 
 ##intent:ask_for_diagnosis
 - i want to diagnose
@@ -107,12 +111,12 @@
 
 
 ##intent:say_symptoms
-- I am having severe [headache](symptom)
-- I am having [stomach pain and headache](symptom)
+- I have severe [headache](symptom)
+- I am feeling [stomach pain and headache](symptom)
 - [severe fever](symptom)
 - [fever, headache and vomiting](symptom)
 - I have [fever, headache and vomiting](symptom)
-- I am feeling [fever, tiredness and dry cough](symptom)
+- I feel [fever, tiredness and dry cough](symptom)
 - I have [irritation of eyes](symptom)
 - [redness of eyes](symptom)
 - Yes. i also have [light sensitivity](symptom)

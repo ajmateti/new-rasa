@@ -1,11 +1,3 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
-
-
-# This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
 
@@ -26,37 +18,6 @@ class ActionHelloWorld(Action):
         dispatcher.utter_message(text="Hello World!")
 
         return []
-
-# class ActionDiagnose(Action):
-#     def name(self) -> Text:
-#         return "action_diagnose"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#         self.dispatcher = dispatcher
-#         self.tracker = tracker
-#         i = 0
-#         self.ask_symptom(first=True)
-#         while i<5:
-#             self.ask_symptom()
-#             i+=1
-#         disease = self.get_disease()
-#         text = "You may have {}".format(disease)
-#         dispatcher.utter_message(text=text)
-#
-#     def ask_symptom(self,first=False):
-#         if first:
-#             self.dispatcher.utter_message(template="utter_ask_first_symptom")
-#         else:
-#             self.dispatcher.utter_message(template="utter_ask_symptoms")
-#         symptom = self.tracker.get_latest_entity_values("my_entity_name")
-#         self.symptoms.append(symptom)
-#         return ([SlotSet("symptom",None)])
-#
-#     def get_disease(self):
-#         print(self.symptoms)
-#         return "Covid19"
 
 
 class ActionAskSymptom(Action):
@@ -84,8 +45,8 @@ class ActionSaveSymptom(Action):
         symptom = tracker.latest_message['text']
         intent = tracker.latest_message['intent'].get('name')
         if symptom == "/say_symptoms":
-            symptom = tracker.events[-3].get("text")
-            intent = tracker.events[-3].get("intent").get("name")
+            symptom = tracker.events[-2].get("text")
+            intent = tracker.events[-2].get("intent").get("name")
         print(symptom)
         print(intent)
 
@@ -106,12 +67,33 @@ class ActionPredictDisease(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         symptoms = tracker.get_slot("symptoms_list")
-        disease = self.predict_disease(symptoms)
-        text = "You may have {}".format(disease)
+        disease, overview = self.predict_disease(symptoms)
+
+        text = "You may have {}".format(disease) + "\n" + overview
         dispatcher.utter_message(text = text)
-        return ([])
+        return ([SlotSet("disease",disease), SlotSet("symptoms_list",[])])
 
     def predict_disease(self,symptoms):
+        symptoms = ' . '.join(symptoms)
         print(symptoms)
         return predict.predict_disease(symptoms)
+
+
+class ActionGetInfoTreatment(Action):
+    def name(self) -> Text:
+        return "action_get_info_treatment"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        disease = tracker.get_slot("disease")
+        treatment = self.get_treatment(disease)
+        dispatcher.utter_message(text = treatment)
+        return ([SlotSet("disease",disease)])
+
+    def get_treatment(self,disease):
+        print(disease)
+        return predict.get_treatment(disease)
+
+
 
