@@ -17,6 +17,7 @@
 - thank you
 - very well
 - okay bye
+- okay take care
 
 ## intent:affirm
 - yes
