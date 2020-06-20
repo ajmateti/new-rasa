@@ -93,7 +93,7 @@
 - iam [harish](name)
 - hi ,i am [chandu](name)
 
-##intent:ask_for_info_treatment
+## intent:ask_for_info_treatment
 - what is the treatment for it?
 - what to do now?
 - what can i do now?
@@ -102,7 +102,7 @@
 - is it curable?
 - what to do if i get [cholera](disease)?
 
-##intent:ask_for_diagnosis
+## intent:ask_for_diagnosis
 - i want to diagnose
 - i have some problems
 - i am not feeling well
@@ -110,7 +110,7 @@
 - i don't feel so good 
 
 
-##intent:say_symptoms
+## intent:say_symptoms
 - I have severe [headache](symptom)
 - I am feeling [stomach pain and headache](symptom)
 - [severe fever](symptom)
