@@ -7,8 +7,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * deny
    - utter_goodbye
 
@@ -17,8 +15,6 @@
    - slot{"name":"ajay"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * deny
    - utter_goodbye
    
@@ -28,8 +24,6 @@
    - slot{"name":"ajay"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * deny
    - utter_goodbye
    
@@ -42,8 +36,6 @@
 * inform{"name":"spoorthi"}
    - slot{"name":"spoorthi"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -61,8 +53,6 @@
 * inform{"name":"spoorthi"}
    - slot{"name":"spoorthi"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -76,8 +66,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"headache"}
    - slot{"symptom":"headache"}
    - action_save_symptom
@@ -92,8 +80,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"headache"}
    - slot{"symptom":"headache"}
    - action_save_symptom
@@ -108,8 +94,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"headache"}
    - slot{"symptom":"headache"}
    - action_save_symptom
@@ -118,15 +102,13 @@
    - action_predict_disease
 * ask_for_info_treatment
    - slot{"disease":"Piles"}
-   - action_get_info_treatment
+   - action_info_treatment
    - utter_goodbye
    
 ## story_2_3
 * inform{"name":"ajay"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"headache"}
    - slot{"symptom":"headache"}
    - action_save_symptom
@@ -144,8 +126,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -167,8 +147,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -187,8 +165,6 @@
    - slot{"name":"aneesh"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -208,8 +184,6 @@
    - slot{"name":"aneesh"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -229,8 +203,6 @@
    - slot{"name":"aneesh"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -249,8 +221,6 @@
    - slot{"name":"aneesh"}
    - utter_greet
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -271,8 +241,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -298,8 +266,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -321,8 +287,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -345,8 +309,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -368,8 +330,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -392,8 +352,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -418,8 +376,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -449,8 +405,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -476,8 +430,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"running nose"}
    - slot{"symptom":"running nose"}
    - action_save_symptom
@@ -504,8 +456,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"running nose"}
    - slot{"symptom":"running nose"}
    - action_save_symptom
@@ -531,8 +481,6 @@
 * inform{"name}":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -559,8 +507,6 @@
 * inform{"name}":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -589,8 +535,6 @@
 * inform{"name":"spoorthi"}
    - slot{"name":"spoorthi"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -608,8 +552,6 @@
 * inform{"name":"spoorthi"}
    - slot{"name":"spoorthi"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"fever"}
    - slot{"symptom":"fever"}
    - action_save_symptom
@@ -623,8 +565,6 @@
 * inform{"name":"aneesh"}
    - slot{"name":"aneesh"}
    - utter_introduction
-* ask_for_diagnosis
-   - action_ask_symptom
 * say_symptoms{"symptom":"headache"}
    - slot{"symptom":"headache"}
    - action_save_symptom

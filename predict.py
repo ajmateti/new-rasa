@@ -115,6 +115,8 @@ def predict_disease(my_input):
     return [disease,get_overview(disease)]
 
 def get_treatment(disease):
+    print("Disease in get_treatment: ")
+    print(disease)
     diseaseId = disease2id[disease]
     df = load_df()
     text = df.iloc[diseaseId]['treatment']

@@ -68,7 +68,7 @@ class ActionPredictDisease(Action):
 
 class ActionGetInfoTreatment(Action):
     def name(self) -> Text:
-        return "action_get_info_treatment"
+        return "action_info_treatment"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,

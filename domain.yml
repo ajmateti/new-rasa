@@ -33,6 +33,7 @@ slots:
     type: text
   name:
     type: text
+    initial_value: User
   symptom:
     type: text
     initial_value: NO_SYMPTOM
@@ -48,7 +49,7 @@ responses:
   utter_ask_name:
   - text: please tell me your name?
   utter_ask_first_symptom:
-  - text: Please tell me more about your symptoms
+  - text: Any other symptoms?
   utter_ask_symptoms:
   - text: Any other symptoms?
   utter_book_appointment:
@@ -62,12 +63,12 @@ responses:
   utter_did_that_help:
   - text: Did that help you?
   utter_goodbye:
-  - text: Take care of your health.Bye!
+  - text: Take care of your health.Bye, {name}!
   utter_greet:
   - text: Hello !
   - text: Hi
   - text: Hi ! How are you?
-  - text: hello {name}!
+  - text: hello, {name}!
   utter_happy:
   - text: Great, carry on!
   utter_howcanhelp:
@@ -83,11 +84,11 @@ responses:
   utter_introduction:
   - text: What are your symptoms?
   - text: Pleas tell me your symptoms.
-  - text: Hello {name}, Tell me your symptoms and I can help you. What do you want?
+  - text: Hello {name}, What are your symptoms?
 forms:
   - ask_symptoms
 actions:
-- action_get_info_treatment
+- action_info_treatment
 - action_ask_symptom
 - action_save_symptom
 - action_predict_disease
